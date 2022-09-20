@@ -1,0 +1,18 @@
+# harmonikSerisiniBulanProgram
+import java.util.Scanner;
+
+public class harmonikSayi1 {
+    public static void main(String[] args){
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("lütfen n değerini giriniz:");
+        int n = inp.nextInt();
+
+        double result = 0;
+         for(double i = 1; i<= n; i++){
+             result += (1/i);
+         }
+        System.out.println("1'den 1/"+n+"e kadar olan sayıların toplamı:"+result);
+
+    }
+}
